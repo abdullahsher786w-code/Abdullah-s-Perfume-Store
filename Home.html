@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="1.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abdullah's Perfume Store</title>
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#0b0b0b] text-white">
+
+    <!-- Navbar -->
+
+    <nav class="flex flex-wrap items-center justify-between bg-[#0b0b0b] text-white px-6
+     md:px-16 py-5 border-b border-gray-700 list-none">
+
+     <div>
+
+        <a href="1.html" class="text-3xl font-serif text-[#f5d58a]">Abdillah's
+            <span class="block text-xs tracking-[5px] text-white">
+                PERFUME STORE</span></a>
+    
+      </div>
+
+     <div class="flex flex-wrap gap-6 md:gap-10 text-sm md:text-base">
+
+         <li><a href="Home.html"> HOME </a></li>
+          <li><a href="About.html"> ABOUT </a></li>
+           <li><a href="Services.html"> SERVICES </a></li>
+            <li><a href="Contact.html"> CONTACT </a></li>
+
+             <!-- ICONS -->
+
+            <div class="hidden sm:flex items-center gap-6">
+
+                <!-- Search Icon -->
+
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+
+                    <circle cx="11" cy="11" r="7"
+                            stroke-width="1.5"/>
+
+                    <path d="m16 16 4 4"
+                          stroke-width="1.5"/>
+
+                </svg>
+
+                <!-- Cart Icon -->
+
+                <a href="#products"
+                   class="text-2xl relative">
+
+                    🛒
+
+                    <span class="absolute -top-2 -right-2
+                                 bg-[#f5d58a] text-black
+                                 text-[10px] rounded-full
+                                 w-4 h-4 flex items-center
+                                 justify-center">
+                        0
+                    </span>
+
+                </a>
+
+                <!-- User Icon -->
+
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="12" r="10"
+                            stroke-width="1.5"/>
+
+                    <circle cx="12" cy="9" r="3"
+                            stroke-width="1.5"/>
+
+                    <path d="M6 19c1-4 11-4 12 0"
+                          stroke-width="1.5"/>
+
+                </svg>
+
+            </div>
+
+      </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    
+    <section class="bg-[#0b0b0b] text-white flex flex-col md:flex-row items-center justify-between px-6
+     md:px-16 py-16 gap-10">
+
+     <!-- Hero Text -->
+
+      <div class="md:w-1/2">
+
+        <p class="text-sm tracking-[5px] text-[#e7bd68]">
+
+            PREMIUM FRAGRANCES
+
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-serif mt-4 leading-tight">
+
+            WELCOME TO
+
+            <span class="block text-[#f5d58a]">
+
+                OUR STORE
+
+            </span>
+
+        </h1>
+
+        <p class="text-gray-300 mt-5 text-lg">
+
+            Discover the perfect scent that defines your style.
+            Premium perfumes for every mood and moment.
+
+        </p>
+
+        <button class="bg-[#f5d58a] text-black px-8 py-3 rounded-full mt-6
+        hover:bg-white transition">
+
+         Shop Now
+
+        </button>
+
+      </div>
+
+     <!-- Hero Image -->
+
+     <div class="image">
+
+          <img src="imageheader.png" alt="Premium Perfume" class="w-full h-65
+         object-center">
+
+     </div>
+
+     </section>
+
+     <!-- Products Section -->
+
+     <section class="bg-[#0b0b0b] text-white px-6 md:px-16 py-12">
+
+        <div class="text-center mb-8">
+
+            <h2 class="text-4xl font-serif text-[#f5d58a]">
+
+                OUR PRODUCTS
+
+            </h2>
+
+            <p class="text-gray-300 mt-3">
+
+                Explore our exclusive collection of premium perfumes.
+                
+            </p>
+
+        </div>
+
+        <!-- Card Grid -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Card 1 -->
+
+        <div class="border border-gray-700 rounded-xl overflow-hidden bg-[#111111]
+        hover:scale-105 transition duration-300">
+     
+        <img src="imagebleu.png" class="w-full h-48 object-center bg-black p3" alt="Bleu De Chanel">
+
+        <div class="p-4">
+
+            <h3 class="text-xl font-semibold">
+
+                Bleu De Chanel
+
+            </h3>
+
+            <p class="text-gray-400 text-sm mt-2">
+
+                A fresh and woody fragrance for the modern man.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+
+                <span class="text-lg font-semibold">
+
+                    12,999
+
+                </span>
+
+                <span class="text-xs text-[#f5d58a] border border-[#f5d58a]
+                 rounded-full px-3 py-1">
+
+                 Best Seller
+
+                </span>
+
+            </div>
+
+            <button class="w-full bg-[#f5d58a] text-black py-2 rounded-lg mt-4 
+            hover:bg-white transition">
+
+            Shop Now
+
+            </button>
+
+        </div>
+
+        </div>
+
+         <!-- Card 2 -->
+
+        <div class="border border-gray-700 rounded-xl overflow-hidden bg-[#111111]
+        hover:scale-105 transition duration-300">
+
+        <img src="imagesauvage.png" class="w-full h-48 object-center bg-black p3" alt="Sauvage Dior">
+
+        <div class="p-4">
+
+            <h3 class="text-xl font-semibold">
+
+                Sauvage Dior
+
+            </h3>
+
+            <p class="text-gray-400 text-sm mt-2">
+
+                Wild. fresh. Unforgettable. Premium Quality.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+
+                <span class="text-lg font-semibold">
+
+                    14,999
+
+                </span>
+
+                <span class="text-xs text-[#f5d58a] border border-[#f5d58a]
+                 rounded-full px-3 py-1">
+
+                    Popular
+
+                </span>
+
+            </div>
+
+            <button class="w-full bg-[#f5d58a] text-black py-2 rounded-lg mt-4 
+            hover:bg-white transition">
+
+            Shop Now
+
+            </button>
+
+        </div>
+
+        </div>
+
+         <!-- Card 3 -->
+
+        <div class="border border-gray-700 rounded-xl overflow-hidden bg-[#111111]
+        hover:scale-105 transition duration-300">
+
+        <img src="imagetom.png" class="w-full h-48 object-center bg-black p3" alt="Tom Ford Oud Wood">
+
+        <div class="p-4">
+
+            <h3 class="text-xl font-semibold">
+
+                Tom Ford Oud Wood
+
+            </h3>
+
+            <p class="text-gray-400 text-sm mt-2">
+
+                A luxurious blend of oud and warm spices.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+
+                <span class="text-lg font-semibold">
+
+                    16,999
+
+                </span>
+
+                <span class="text-xs text-[#f5d58a] border border-[#f5d58a]
+                 rounded-full px-3 py-1">
+
+                 Luxury
+
+                </span>
+
+            </div>
+
+            <button class="w-full bg-[#f5d58a] text-black py-2 rounded-lg mt-4 
+            hover:bg-white transition">
+
+            Shop Now
+
+            </button>
+
+
+        </div>
+
+        </div>
+
+
+         <!-- Card 4 -->
+
+        <div class="border border-gray-700 rounded-xl overflow-hidden bg-[#111111]
+        hover:scale-105 transition duration-300">
+
+        <img src="imageversace.png" class="w-full h-48 object-center bg-black p3" alt="Versace Eros">
+
+        <div class="p-4">
+
+            <h3 class="text-xl font-semibold">
+
+                Versace Eros
+
+            </h3>
+
+            <p class="text-gray-400 text-sm mt-2">
+
+                A bold and passionate scent for the confident.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+
+                <span class="text-lg font-semibold">
+
+                    11,999
+
+                </span>
+
+                <span class="text-xs text-[#f5d58a] border border-[#f5d58a]
+                 rounded-full px-3 py-1">
+
+                 Classic
+
+                </span>
+
+            </div>
+
+            <button class="w-full bg-[#f5d58a] text-black py-2 rounded-lg mt-4 
+            hover:bg-white transition">
+
+            Shop Now
+
+            </button>
+
+
+        </div>
+
+        </div>
+
+        </div>
+
+     </section>
+
+<!-- Features Section -->
+
+<section class="bg-[#0b0b0b] text-white
+grid grid-cols-2 md:grid-cols-4 gap-6
+px-6 md:px-16 py-8 border-y border-gray-700">
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🚚 Free Shipping
+        </h3>
+        <p class="text-sm text-gray-400">
+            On orders over PKR 2000
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🛡 100% Original
+        </h3>
+        <p class="text-sm text-gray-400">
+            Genuine & Authentic Products
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🎧 24/7 Support
+        </h3>
+        <p class="text-sm text-gray-400">
+            We're here to help
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🎁 Easy Returns
+        </h3>
+        <p class="text-sm text-gray-400">
+            Hassle-free 7 days return
+        </p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-[#080808] text-white
+border-t border-gray-700 px-6 md:px-16 py-10 mt-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2
+    lg:grid-cols-4 gap-8">
+
+        <div>
+            <h2 class="text-3xl font-serif text-[#f5d58a]">
+                Abdullah's
+            </h2>
+
+            <p class="text-xs tracking-[5px] mt-2">
+                PERFUME STORE
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Quick Links
+            </h3>
+
+            <p>Home</p>
+            <p>Shop</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Contact Us
+            </h3>
+
+            <p>+92 300 0621667</p>
+            <p>abdullahsher786w@gmail.com</p>
+            <p>Karachi, Pakistan</p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Follow Us
+            </h3>
+
+            <p>Facebook | Instagram</p>
+            <p>YouTube | TikTok</p>
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-5
+    text-sm text-gray-400 flex flex-wrap
+    justify-between gap-3">
+
+        <p>© 2026 Abdullah's Perfume Store.</p>
+
+        <p>Luxury Fragrances | Better Every Day</p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

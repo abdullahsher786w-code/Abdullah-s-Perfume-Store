@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="1.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abdullah's Perfume Store</title>
+
+
+    <!-- Tailwind CSS -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#0b0b0b] text-white">
+
+
+    <!-- Navbar -->
+
+
+    <nav class="flex flex-wrap items-center justify-between bg-[#0b0b0b] text-white px-6
+     md:px-16 py-5 border-b border-gray-700 list-none">
+
+     <div>
+
+        <a href="1.html" class="text-3xl font-serif text-[#f5d58a]">Abdillah's
+            <span class="block text-xs tracking-[5px] text-white">
+                PERFUME STORE</span></a>
+    
+      </div>
+
+     <div class="flex flex-wrap gap-6 md:gap-10 text-sm md:text-base">
+
+         <li><a href="Home.html"> HOME </a></li>
+          <li><a href="About.html"> ABOUT </a></li>
+           <li><a href="Services.html"> SERVICES </a></li>
+            <li><a href="Contact.html"> CONTACT </a></li>
+
+
+             <!-- ICONS -->
+
+
+            <div class="hidden sm:flex items-center gap-6">
+
+
+                <!-- Search Icon -->
+
+
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+
+                    <circle cx="11" cy="11" r="7"
+                            stroke-width="1.5"/>
+
+                    <path d="m16 16 4 4"
+                          stroke-width="1.5"/>
+
+                </svg>
+
+
+                <!-- Cart Icon -->
+
+
+                <a href="#products"
+                   class="text-2xl relative">
+
+                    🛒
+
+                    <span class="absolute -top-2 -right-2
+                                 bg-[#f5d58a] text-black
+                                 text-[10px] rounded-full
+                                 w-4 h-4 flex items-center
+                                 justify-center">
+                        0
+                    </span>
+
+                </a>
+
+
+                <!-- User Icon -->
+
+
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="12" r="10"
+                            stroke-width="1.5"/>
+
+                    <circle cx="12" cy="9" r="3"
+                            stroke-width="1.5"/>
+
+                    <path d="M6 19c1-4 11-4 12 0"
+                          stroke-width="1.5"/>
+
+                </svg>
+
+            </div>
+
+      </div>
+
+    </nav>
+
+
+    <!-- =================================================
+         CONTACT HERO
+    ================================================== -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                CONTACT
+                <br>
+                US
+            </h1>
+
+            <p>
+                Have a question about a fragrance?
+                We'd love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACT SECTION
+    ================================================== -->
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <p class="eyebrow">
+                    CONTACT DETAILS
+                </p>
+
+                <h2>
+                    LET'S TALK
+                </h2>
+
+                <p class="contact-description">
+
+                    Whether you need help choosing a
+                    fragrance, want to place an order,
+                    or simply have a question, feel free
+                    to contact us.
+
+                </p>
+
+
+                <!-- PHONE -->
+
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Phone
+                        </h4>
+
+                        <p>
+                            +92 300 0621667
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Email
+                        </h4>
+
+                        <p>
+                            abdullahsherw@786gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Location
+                        </h4>
+
+                        <p>
+                           Abullah Perfume Store, Shah Rasool Colony, Near NBP Sports Complex, Opposite Abdullah Shah Ghazi Shrine, Block 4, Clifton, Karachi, Pakistan
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HOURS -->
+
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        ◷
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Opening Hours
+                        </h4>
+
+                        <p>
+                            Monday – Sunday
+                            <br>
+                            06:00 AM – 12:00 AM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="contact-form-box">
+
+                <p class="eyebrow">
+                    SEND A MESSAGE
+                </p>
+
+                <h2>
+                    GET IN TOUCH
+                </h2>
+
+
+                <form id="contactForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Your Email
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SUBJECT -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="input-group">
+
+                        <label>
+                            Your Message
+                        </label>
+
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="contact-btn"
+                    >
+
+                        SEND MESSAGE
+
+                    </button>
+
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                    ></p>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACT BANNER
+    ================================================== -->
+
+    <section class="contact-banner">
+
+        <div>
+
+            <p class="eyebrow">
+                ABDULLAH'S PERFUME STORE
+            </p>
+
+            <h2>
+                FIND YOUR
+                <span>PERFECT SCENT</span>
+            </h2>
+
+            <p>
+                Let your fragrance tell your story.
+            </p>
+
+        </div>
+
+    </section>
+
+
+<!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+    <!-- Features Section -->
+
+<section class="bg-[#0b0b0b] text-white
+grid grid-cols-2 md:grid-cols-4 gap-6
+px-6 md:px-16 py-8 border-y border-gray-700">
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🚚 Free Shipping
+        </h3>
+        <p class="text-sm text-gray-400">
+            On orders over PKR 2000
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🛡 100% Original
+        </h3>
+        <p class="text-sm text-gray-400">
+            Genuine & Authentic Products
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-[#f5d58a] font-semibold">
+            🎧 24/7 Support
+        </h3>
+        <p class="text-sm text-gray-400">
+            We're here to help
+        </p>
+    </div>
+
+    <div>][-,]
+        <h3 class="text-[#f5d58a] font-semibold">
+            🎁 Easy Returns
+        </h3>
+        <p class="text-sm text-gray-400">
+            Hassle-free 7 days return
+        </p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-[#080808] text-white
+border-t border-gray-700 px-6 md:px-16 py-10 mt-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2
+    lg:grid-cols-4 gap-8">
+
+        <div>
+            <h2 class="text-3xl font-serif text-[#f5d58a]">
+                Abdullah's
+            </h2>
+
+            <p class="text-xs tracking-[5px] mt-2">
+                PERFUME STORE
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Quick Links
+            </h3>
+
+            <p>Home</p>
+            <p>Shop</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Contact Us
+            </h3>
+
+            <p>+92 300 0621667</p>
+            <p>abdullahsher786w@gmail.com</p>
+            <p>Karachi, Pakistan</p>
+        </div>
+
+        <div>
+            <h3 class="text-[#f5d58a] text-lg mb-3">
+                Follow Us
+            </h3>
+
+            <p>Facebook | Instagram</p>
+            <p>YouTube | TikTok</p>
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-5
+    text-sm text-gray-400 flex flex-wrap
+    justify-between gap-3">
+
+        <p>© 2026 Abdullah's Perfume Store.</p>
+
+        <p>Luxury Fragrances | Better Every Day</p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
