@@ -1,0 +1,1384 @@
+/* =================================================
+   ABOUT PAGE
+================================================= */
+
+/* ABOUT HERO */
+
+.about-hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1a1712 0%,
+            #0d0d0d 45%,
+            #080808 100%
+        );
+
+    border-bottom: 1px solid #292929;
+}
+
+.about-hero-content {
+    max-width: 750px;
+}
+
+.about-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 65px;
+    line-height: 0.95;
+
+    font-weight: 600;
+
+    color: #f5f0e6;
+
+    margin-bottom: 25px;
+}
+
+.about-hero-content > p:last-child {
+    max-width: 550px;
+
+    margin: auto;
+
+    color: #a9a9a9;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ABOUT MAIN SECTION */
+
+.about-section {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 90px 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.about-image {
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border: 1px solid #343434;
+
+    border-radius: 5px;
+
+    background: #111;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* CONTENT */
+
+.about-content h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 43px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    color: #f1eadc;
+
+    margin-bottom: 25px;
+}
+
+.about-content > p:not(.eyebrow) {
+    color: #a5a5a5;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* GOLD LINE */
+
+.about-content h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 2px;
+
+    background: #c8a45d;
+
+    margin-top: 20px;
+}
+
+
+/* =================================================
+   ABOUT STATS
+================================================= */
+
+.about-stats {
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #292929;
+}
+
+.about-stats div {
+    min-width: 80px;
+}
+
+.about-stats h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    color: #d5b46c;
+
+    margin-bottom: 2px;
+}
+
+.about-stats p {
+    color: #777;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================================
+   WHY CHOOSE US
+================================================= */
+
+.why-us {
+    padding: 80px 6% 100px;
+
+    border-top: 1px solid #252525;
+
+    background: #0b0b0b;
+}
+
+.why-us .section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.why-us .section-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+
+    color: #eee;
+
+    margin-bottom: 8px;
+}
+
+.why-us .section-heading > p:last-child {
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* WHY CARDS */
+
+.why-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.why-card {
+    text-align: center;
+
+    padding: 38px 25px;
+
+    min-height: 245px;
+
+    border: 1px solid #353535;
+
+    border-radius: 5px;
+
+    background: #101010;
+
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #a98950;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+.why-icon {
+    font-size: 30px;
+
+    margin-bottom: 18px;
+
+    color: #d3b16a;
+}
+
+.why-card h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+
+    color: #eee;
+
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #929292;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================================
+   ABOUT PAGE RESPONSIVE
+================================================= */
+
+@media (max-width: 900px) {
+
+    .about-section {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 350px;
+
+        padding: 60px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 46px;
+    }
+
+    .about-hero-content > p:last-child {
+        font-size: 12px;
+    }
+
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-image {
+        height: 330px;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-stats {
+        gap: 25px;
+    }
+
+    .why-us {
+        padding: 60px 20px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =================================================
+   SERVICES PAGE
+================================================= */
+
+.services-hero {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1a1712 0%,
+            #0d0d0d 45%,
+            #080808 100%
+        );
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.services-hero-content {
+    max-width: 750px;
+}
+
+
+.services-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 65px;
+
+    line-height: .92;
+
+    font-weight: 600;
+
+    color: #f5f0e6;
+
+    margin-bottom: 25px;
+}
+
+
+.services-hero-content > p:last-child {
+    max-width: 550px;
+
+    margin: auto;
+
+    color: #a9a9a9;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================================
+   SERVICES INTRO
+================================================= */
+
+.services-intro {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 85px 25px 50px;
+}
+
+
+.services-intro h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 43px;
+
+    line-height: 1;
+
+    color: #eee;
+
+    margin-bottom: 20px;
+}
+
+
+.services-intro > p:last-child {
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* =================================================
+   SERVICES GRID
+================================================= */
+
+.services-section {
+    padding: 30px 6% 90px;
+}
+
+
+.services-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.service-card {
+    position: relative;
+
+    min-height: 330px;
+
+    padding: 35px 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #0c0c0c
+        );
+
+    border: 1px solid #353535;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c7a45d,
+            transparent
+        );
+
+    opacity: 0;
+
+    transition: .3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #9f824d;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.45);
+}
+
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+
+/* NUMBER */
+
+.service-number {
+    position: absolute;
+
+    top: 20px;
+
+    right: 23px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 28px;
+
+    color: #292929;
+
+    font-weight: 700;
+}
+
+
+/* ICON */
+
+.service-icon {
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #51452e;
+
+    border-radius: 50%;
+
+    color: #d6b36b;
+
+    font-size: 23px;
+
+    background: #111;
+}
+
+
+/* TITLE */
+
+.service-card h3 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 28px;
+
+    color: #eee;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p {
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+}
+
+
+/* LINK */
+
+.service-card a {
+    color: #d4b16a;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: .4px;
+}
+
+
+.service-card a span {
+    margin-left: 6px;
+
+    transition: margin .25s ease;
+}
+
+
+.service-card a:hover span {
+    margin-left: 12px;
+}
+
+
+/* =================================================
+   PREMIUM SECTION
+================================================= */
+
+.premium-section {
+    max-width: 1100px;
+
+    min-height: 360px;
+
+    margin: 0 auto 90px;
+
+    padding: 65px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-top: 1px solid #393226;
+
+    border-bottom: 1px solid #393226;
+
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            #1d1810,
+            #0d0d0d 50%
+        );
+}
+
+
+.premium-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 570px;
+}
+
+
+.premium-content h2 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 46px;
+
+    line-height: .95;
+
+    color: #f1eadc;
+
+    margin-bottom: 20px;
+}
+
+
+.premium-content > p:not(.eyebrow) {
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+
+.premium-btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: #d8b66d;
+
+    color: #15120d;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .8px;
+
+    border-radius: 3px;
+
+    transition: .25s;
+}
+
+
+.premium-btn:hover {
+    background: #efd18b;
+
+    transform: translateY(-2px);
+}
+
+
+/* DECORATION */
+
+.premium-decoration {
+    position: absolute;
+
+    right: 70px;
+
+    width: 260px;
+
+    height: 260px;
+}
+
+
+.gold-circle {
+    position: absolute;
+
+    width: 230px;
+
+    height: 230px;
+
+    border: 1px solid #80683c;
+
+    border-radius: 50%;
+
+    opacity: .45;
+}
+
+
+.gold-circle::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 22px;
+
+    border: 1px solid #80683c;
+
+    border-radius: 50%;
+}
+
+
+.gold-line {
+    position: absolute;
+
+    width: 2px;
+
+    height: 300px;
+
+    background: #80683c;
+
+    transform:
+        rotate(45deg);
+
+    left: 120px;
+
+    top: -20px;
+
+    opacity: .25;
+}
+
+
+/* =================================================
+   SERVICE FEATURES
+================================================= */
+
+.service-features {
+    padding: 30px 6%;
+
+    border-top: 1px solid #282828;
+
+    border-bottom: 1px solid #282828;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.service-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.service-feature .feature-icon {
+    font-size: 23px;
+
+    color: #d4b16a;
+}
+
+
+.service-feature h4 {
+    font-size: 12px;
+
+    color: #eee;
+
+    margin-bottom: 3px;
+}
+
+
+.service-feature p {
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* =================================================
+   SERVICES RESPONSIVE
+================================================= */
+
+@media (max-width: 900px) {
+
+    .services-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .service-features {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .premium-decoration {
+        right: 20px;
+
+        opacity: .35;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-hero {
+        min-height: 350px;
+
+        padding: 60px 20px;
+    }
+
+
+    .services-hero h1 {
+        font-size: 47px;
+    }
+
+
+    .services-hero-content > p:last-child {
+        font-size: 12px;
+    }
+
+
+    .services-intro {
+        padding:
+            65px 20px 40px;
+    }
+
+
+    .services-intro h2 {
+        font-size: 36px;
+    }
+
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+        min-height: auto;
+    }
+
+
+    .premium-section {
+        margin:
+            0 20px 60px;
+
+        padding: 50px 30px;
+
+        min-height: 400px;
+    }
+
+
+    .premium-content h2 {
+        font-size: 39px;
+    }
+
+
+    .premium-decoration {
+        right: -80px;
+
+        opacity: .2;
+    }
+
+
+    .service-features {
+        grid-template-columns: 1fr;
+
+        padding:
+            30px 20px;
+    }
+
+}
+/* =================================================
+   CONTACT PAGE
+================================================= */
+
+.contact-hero {
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1a1712 0%,
+            #0d0d0d 45%,
+            #080808 100%
+        );
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.contact-hero-content {
+    max-width: 700px;
+}
+
+
+.contact-hero h1 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 65px;
+
+    line-height: .92;
+
+    font-weight: 600;
+
+    color: #f5f0e6;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-hero-content > p:last-child {
+    color: #a9a9a9;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================================
+   CONTACT SECTION
+================================================= */
+
+.contact-section {
+    padding: 90px 6%;
+}
+
+
+.contact-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* LEFT */
+
+.contact-info h2,
+.contact-form-box h2 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 43px;
+
+    line-height: 1;
+
+    color: #eee;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-description {
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    max-width: 480px;
+
+    margin-bottom: 30px;
+}
+
+
+/* CONTACT ITEM */
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.contact-item-icon {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #5b4b31;
+
+    border-radius: 50%;
+
+    color: #d5b36a;
+
+    font-size: 17px;
+
+    background: #101010;
+}
+
+
+.contact-item h4 {
+    color: #d5b36a;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 4px;
+}
+
+
+.contact-item p {
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================================
+   FORM
+================================================= */
+
+.contact-form-box {
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #0c0c0c
+        );
+
+    border: 1px solid #353535;
+
+    border-radius: 5px;
+}
+
+
+.contact-form-box h2 {
+    margin-bottom: 30px;
+}
+
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+    display: block;
+
+    color: #c9a96a;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+
+    background: #0b0b0b;
+
+    border: 1px solid #353535;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    padding: 13px 14px;
+
+    color: #eee;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    transition: .25s;
+}
+
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #626262;
+}
+
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #a98950;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(169,137,80,.1);
+}
+
+
+.input-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+.contact-btn {
+    border: none;
+
+    padding: 13px 28px;
+
+    background: #d7b46b;
+
+    color: #17130c;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+
+.contact-btn:hover {
+    background: #efd28c;
+
+    transform: translateY(-2px);
+}
+
+
+.form-message {
+    margin-top: 14px;
+
+    color: #c9a96a;
+
+    font-size: 11px;
+}
+
+
+/* =================================================
+   CONTACT BANNER
+================================================= */
+
+.contact-banner {
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    border-top: 1px solid #282828;
+
+    border-bottom: 1px solid #282828;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1b1710,
+            #090909 65%
+        );
+}
+
+
+.contact-banner h2 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 43px;
+
+    line-height: 1;
+
+    color: #eee;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-banner h2 span {
+    color: #d3b16a;
+}
+
+
+.contact-banner > div > p:last-child {
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* =================================================
+   CONTACT RESPONSIVE
+================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        min-height: 350px;
+
+        padding: 60px 20px;
+    }
+
+
+    .contact-hero h1 {
+        font-size: 48px;
+    }
+
+
+    .contact-hero-content > p:last-child {
+        font-size: 12px;
+    }
+
+
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+
+    .contact-info h2,
+    .contact-form-box h2 {
+        font-size: 36px;
+    }
+
+
+    .contact-form-box {
+        padding: 28px 20px;
+    }
+
+
+    .contact-banner {
+        min-height: 260px;
+    }
+
+
+    .contact-banner h2 {
+        font-size: 36px;
+    }
+
+}
